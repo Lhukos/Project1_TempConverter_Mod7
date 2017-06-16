@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/degreesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="@string/degrees_label"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/farenheitLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/degreesLabel"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="48dp"
+        android:layout_toLeftOf="@+id/degreesLabel"
+        android:layout_toStartOf="@+id/degreesLabel"
+        android:text="@string/farenheit_label"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/celciusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/farenheitLabel"
+        android:layout_alignStart="@+id/farenheitLabel"
+        android:layout_below="@+id/farenheitLabel"
+        android:layout_marginTop="38dp"
+        android:text="@string/celcius_label"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/celciusTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/celciusLabel"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/degreesLabel"
+        android:layout_toRightOf="@+id/degreesLabel"
+        android:text="@string/_0_00"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/farenheitET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/farenheitLabel"
+        android:layout_alignLeft="@+id/celciusTV"
+        android:layout_alignStart="@+id/celciusTV"
+        android:inputType="numberDecimal"
+        android:text="@string/_00_00"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>
